@@ -1,0 +1,17 @@
+<header class="main-header">
+  <div class="mw9 center">
+    <div class="cf flex-ns flex-row">
+      <div class="home-about flex-auto-ns"></div>
+      <nav class="pv2 pv4-ns ph3 ph5-ns flex-auto-ns">
+        {% for nav_item in navs.header_nav.items %}
+          <div class="nav-item">
+            <a href="{{ nav_item.link }}">
+              {{ nav_item.title }}
+            </a>
+          </div>
+        {% endfor %}
+      </nav>
+
+    </div>
+  </div>
+</header>

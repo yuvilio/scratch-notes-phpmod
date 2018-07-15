@@ -1,0 +1,77 @@
+{% extends "layout.nunj" %}
+
+{# for now empty  #}
+
+{% block content %}
+  <main class="main-wrap ">
+
+    {% for post in collections.posts %}
+
+    <div class="teaser-side">
+      <div class="mw9 center">
+        <div class="cf flex-ns flex-row ">
+
+          <div class="w-100 w-75-ns pv2 pv4-ns ph3 ph5-ns order-1-ns ">
+            <header class="title lh-solid tc tl-ns f3 f2-ns mb2">
+              <a class=" " href="{{ post.path }}/">
+                {{post.title}}
+              </a>
+            </header>
+
+            <div class="excerpt">
+              {{post.excerpt}}
+            </div>
+          </div>
+
+
+          <aside class="w-100 w-20-ns pv2 pv4-ns ph2 ph3-ns order-0-ns">
+            <time class="f5 db mb2">
+              {{post.stats.atime | date}}
+            </time>
+
+            <div class="tags f5 i">
+              {% for tag in post.tags %}
+                  <a href="/tag/{{tag.slug}}/">
+                    {{tag.name}} {% if not loop.last %}, {% endif %}
+                  </a>
+              {% endfor %}
+            </div>
+          </aside>
+
+
+        </div>
+      </div>
+    </div> <!-- /.teaser -->
+
+{#
+      <div class="teaser-side ph3 ph4-m ph5-l ">
+        <div class="mw9 center">
+          <div class="cf">
+            <aside class="fl pv2  w-100 w-third-ns">
+              <a class="title" href="{{ post.path }}/">
+                {{post.title}}
+              </a>
+
+              <time>{{post.stats.atime | date}}</time>
+
+              <div class="tags">
+                {% for tag in post.tags %}
+                    <a href="/tag/{{tag.slug}}">{{tag.name}}</a>
+                {% endfor %}
+              </div>
+            </aside>
+            <div class="fr pv2 w-100 w-two-thirds-ns post-content">
+              <div class="excerpt">
+                {{post.excerpt}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.teaser -->
+#}
+
+    {% endfor %}
+  </main>
+{% endblock %}
+
+{# example object dump . handing for debug/console.log: <pre> {{ tags | dump }}</pre> #}

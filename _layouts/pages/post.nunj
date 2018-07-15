@@ -1,0 +1,27 @@
+{# post collection #}
+{% extends "layout.nunj" %}
+
+{% block content %}
+
+  <div class="main-wrap">
+
+    <article class="pv2 pv4-ns ph3 ph5-ns w-80-ns">
+      <h1 class="tracked"> {{ title }} </h1>
+      <div class="meta">
+        {% for tag in tags %}
+          <a href="/tag/{{tag.slug}}">
+            {{ tag.name }} {% if not loop.last %}, {% endif %}
+          </a>
+        {% endfor %}
+      </div>
+
+      <div class="content lh-copy">
+        {{contents}}
+      </div>
+
+    </article>
+
+  </div>
+
+
+{% endblock %}

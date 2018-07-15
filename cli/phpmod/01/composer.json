@@ -1,0 +1,16 @@
+{
+  "name": "yuvilio/modphp01",
+  "description": "packages needed for modphp01 exercises",
+  "authors": [{
+    "name": "yuvilio"
+  }],
+  "require": {},
+  "require-dev": {
+    "danielstjules/stringy": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ch01\\": "src/"
+    }
+  }
+}

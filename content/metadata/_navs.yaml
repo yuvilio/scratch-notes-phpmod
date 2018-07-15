@@ -1,0 +1,5 @@
+#- title: Getting Started
+header_nav:
+  items:
+    - title: About
+      link: /about

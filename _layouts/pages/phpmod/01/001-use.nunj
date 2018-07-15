@@ -1,0 +1,19 @@
+{% set js_bundle = "" %}
+{% extends "layout.nunj" %}
+
+{% block content %}
+  <div class="main-wrap">
+
+    <article class="pv2 pv4-ns ph3 ph4-ns w-90-ns">
+      <h1 class="tracked"> {{ title }} </h1>
+
+      <div class="content lh-copy">
+        {{contents}}
+      </div>
+
+    </article>
+
+  </div>
+
+
+{% endblock %}

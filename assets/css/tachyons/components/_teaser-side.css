@@ -1,0 +1,8 @@
+/* */
+
+.teaser-side {
+  .title {
+    font-family: var(--font-sans);
+    font-weight: bold;
+  }
+}

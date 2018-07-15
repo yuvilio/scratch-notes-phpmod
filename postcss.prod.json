@@ -1,0 +1,19 @@
+{
+  "use": [
+    "postcss-import",
+    "postcss-custom-properties",
+    "postcss-nested",
+    "postcss-extend",
+    "postcss-calc",
+    "postcss-color-function",
+    "postcss-custom-media",
+    "autoprefixer",
+    "cssnano",
+    "css-mqpacker"
+  ],
+  "input": "./assets/css/main.css",
+  "output": "./dist/assets/css/main.css",
+  "map": {
+    "inline": false
+  }
+}

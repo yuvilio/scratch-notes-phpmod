@@ -1,0 +1,25 @@
+{# page collection #}
+{% extends "layout.nunj" %}
+
+{# for now empty  #}
+{% block content %}
+  <div class="main-wrap">
+
+    <div class="row">
+      <div class="small-12">
+        <h1>{{title}}</h1>
+
+        <div class="meta">
+          {% for tag in post.tags %}
+              <a href="/tag/{{tag.slug}}">{{tag.name}}</a>
+          {% endfor %}
+        </div>
+
+
+        {{contents}}
+      </div>
+    </div>
+
+
+  </div>
+{% endblock %}

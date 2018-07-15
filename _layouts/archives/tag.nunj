@@ -1,0 +1,5 @@
+{% extends "layout.nunj" %}
+
+{% block content %}
+  posts of tag {{tag}}
+{% endblock %}

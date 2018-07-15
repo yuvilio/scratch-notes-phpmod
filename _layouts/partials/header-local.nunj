@@ -1,0 +1,56 @@
+<style class="fonts-local">
+      /* Webfonts */
+
+      /* Titillium Web */
+      /* latin-ext */
+      @font-face {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Titillium Web'), local('TitilliumWeb-Regular'), url(/assets/fonts/titillium-web/7XUFZ5tgS-tD6QamInJTcSo_WB_cotcEMUw1LsIE8mM.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Titillium Web'), local('TitilliumWeb-Regular'), url(/assets/fonts/titillium-web/7XUFZ5tgS-tD6QamInJTcZSnX671uNZIV63UdXh3Mg0.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+      }
+
+
+      /* Caudex */
+      /* greek-ext */
+      @font-face {
+        font-family: 'Caudex';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Caudex'), url({{dev_env.hostname}}/dist/assets/fonts/caudex/F4GMM3AOdIhW2FRxq42bxvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+      /* greek */
+      @font-face {
+        font-family: 'Caudex';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Caudex'), url(/assets/fonts/caudex/kDs5NklusTrMOvA9fRN3-vesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Caudex';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Caudex'), url(/assets/fonts/caudex/q-VFfL7gSaIsC36tUchrFfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Caudex';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Caudex'), url(/assets/fonts/caudex/tEyJJhH5jnB2yxr-0TBTSg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+      }
+</style>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+{# figure slug from path#}
+{% set pathArray = path.split('/') %}
+{% set slug = pathArray[ pathArray.length - 1] %}
+{% set postType = "page" if (pathArray.length < 2) else pathArray[0] %} {# 'page', 'posts', ..#}
+
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ misc.site_name }} | {{ title }}</title>
+    <meta name="description" content="{{metatag_description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/tachyons/assets/css/main.css">
+
+    {% if dev_env.env %}
+      {% include "partials/header-local.nunj" %}
+    {% else %}
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Caudex" rel="stylesheet">
+    {% endif %}
+
+
+    {% block header_scripts %}{% endblock %}
+
+    {#
+      favicon:
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <!-- Place favicon.ico in the root directory -->
+    #}
+
+
+  </head>
+
+  <body class="{{ postType }} slug-{{ slug }} {{ body_classes }}">
+
+    <header>
+
+      {% include "partials/header-nav.nunj" %}
+
+    </header>
+
+
+    {% block content %}{% endblock %}
+
+    {# general scripts #}
+
+    {# sitewide js #}
+    {% if dev_env.env %}
+
+      <script src="{{ js_bundle }}"></script>
+    {% endif %}
+
+
+    <!-- test -->
+
+    {# page specific scripts #}
+    {% block footer_scripts %}{% endblock %}
+
+  </body>
+
+</html>

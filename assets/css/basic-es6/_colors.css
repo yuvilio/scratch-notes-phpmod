@@ -1,0 +1,19 @@
+:root {
+  /* main palette , the 400s*/
+  /* Coolors Exported Palette - https://coolors.co/999b9f-d9d9e0-5f6564-bbbdc3-d9d9e0 */
+  --cinnabar-red: #e64845;
+  --bright-gray: #373a4a;
+
+  /* grays */
+  --gray-manatee: #999b9f;
+  --gray-mischka: #d9d9e0;
+  --gray-corduroy: #5f6564;
+  --french-gray: #bbbdc3;
+  --gray-mischka: #d9d9e0;
+  --text-dark: color(black a(85%));
+}
+
+body {
+  background-color: var(--bright-gray);
+  color: var(--french-gray);
+}

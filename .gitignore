@@ -1,0 +1,15 @@
+public/
+dist/*
+!dist/fonts/
+node_modules/
+.publish/
+_layouts/test
+content/test
+content/uploads
+lib/composer-libs/
+
+composer.lock
+vendor/
+
+npm-debug.log
+.php_cs.cache
